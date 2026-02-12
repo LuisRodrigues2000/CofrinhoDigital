@@ -36,7 +36,6 @@
             lblSaldo = new Label();
             contextMenuStrip1 = new ContextMenuStrip(components);
             txtValor = new TextBox();
-            label1 = new Label();
             label2 = new Label();
             SuspendLayout();
             // 
@@ -99,15 +98,6 @@
             txtValor.Size = new Size(100, 23);
             txtValor.TabIndex = 7;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 8;
-            label1.Text = "label1";
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -124,7 +114,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(338, 228);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(txtValor);
             Controls.Add(lblSaldo);
             Controls.Add(btnSacar);
@@ -146,6 +135,5 @@
         private Label lblSaldo;
         private ContextMenuStrip contextMenuStrip1;
         private TextBox txtValor;
-        private Label label1;
     }
 }
