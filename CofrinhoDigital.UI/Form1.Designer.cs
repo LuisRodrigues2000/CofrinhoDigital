@@ -36,12 +36,14 @@
             lblSaldo = new Label();
             contextMenuStrip1 = new ContextMenuStrip(components);
             txtValor = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // Valor
             // 
             Valor.AutoSize = true;
-            Valor.Location = new Point(17, 38);
+            Valor.Location = new Point(17, 111);
             Valor.Name = "Valor";
             Valor.Size = new Size(36, 15);
             Valor.TabIndex = 2;
@@ -49,7 +51,7 @@
             // 
             // btnSaldo
             // 
-            btnSaldo.Location = new Point(240, 101);
+            btnSaldo.Location = new Point(240, 174);
             btnSaldo.Name = "btnSaldo";
             btnSaldo.Size = new Size(75, 23);
             btnSaldo.TabIndex = 4;
@@ -59,7 +61,7 @@
             // 
             // btnDepositar
             // 
-            btnDepositar.Location = new Point(134, 101);
+            btnDepositar.Location = new Point(134, 174);
             btnDepositar.Name = "btnDepositar";
             btnDepositar.Size = new Size(75, 23);
             btnDepositar.TabIndex = 4;
@@ -69,7 +71,7 @@
             // 
             // btnSacar
             // 
-            btnSacar.Location = new Point(26, 101);
+            btnSacar.Location = new Point(26, 174);
             btnSacar.Name = "btnSacar";
             btnSacar.Size = new Size(75, 23);
             btnSacar.TabIndex = 4;
@@ -80,7 +82,7 @@
             // lblSaldo
             // 
             lblSaldo.AutoSize = true;
-            lblSaldo.Location = new Point(210, 38);
+            lblSaldo.Location = new Point(210, 111);
             lblSaldo.Name = "lblSaldo";
             lblSaldo.Size = new Size(0, 15);
             lblSaldo.TabIndex = 5;
@@ -92,16 +94,37 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(59, 35);
+            txtValor.Location = new Point(59, 108);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(100, 23);
             txtValor.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 8;
+            label1.Text = "label1";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label2.Location = new Point(59, 27);
+            label2.Name = "label2";
+            label2.Size = new Size(216, 30);
+            label2.TabIndex = 9;
+            label2.Text = "COFRINHO DIGITAL";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(338, 148);
+            ClientSize = new Size(338, 228);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(txtValor);
             Controls.Add(lblSaldo);
             Controls.Add(btnSacar);
@@ -123,5 +146,6 @@
         private Label lblSaldo;
         private ContextMenuStrip contextMenuStrip1;
         private TextBox txtValor;
+        private Label label1;
     }
 }
