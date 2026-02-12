@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CofrinhoDigital.Core/CofrinhoDigital.Core.csproj" />
+  <Project Path="CofrinhoDigital.UI/CofrinhoDigital.UI.csproj" />
+</Solution>
